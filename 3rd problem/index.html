@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Art of Letting Him Go | My Blog</title>
+  <style>
+    /* Basic Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fafafa;
+      color: #222;
+      line-height: 1.6;
+      margin: 0;
+      padding: 2rem 1rem;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+      scroll-behavior: smooth;
+    }
+
+    article {
+      background: white;
+      padding: 2rem 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+      margin-bottom: 3rem;
+      transition: box-shadow 0.3s ease;
+    }
+    article:hover {
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    article header {
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+    }
+
+    h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #b33951;
+      line-height: 1.1;
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      text-shadow: 0 1px 1px rgba(179,57,81,0.3);
+    }
+
+    .author-date {
+      font-size: 0.9rem;
+      color: #666;
+      font-style: italic;
+    }
+
+    .author-date time {
+      font-weight: 600;
+      color: #932432;
+    }
+
+    article img {
+      display: block;
+      max-width: 100%;
+      margin: 1.5rem 0;
+      border: 4px solid #ddd;
+      border-radius: 6px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: zoom-in;
+    }
+    article img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      cursor: zoom-out;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+      color: #932432;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.3rem;
+    }
+
+    p {
+      font-size: 1.15rem;
+      margin-bottom: 1.25rem;
+      color: #333;
+    }
+
+    ul {
+      margin-left: 1.3rem;
+      margin-bottom: 1.25rem;
+      color: #444;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+
+    /* Comments Section */
+    section#comments {
+      background: white;
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    section#comments h3 {
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 1.2rem;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.3rem;
+      color: #b33951;
+      text-shadow: 0 1px 1px rgba(179,57,81,0.2);
+    }
+
+    article.comment {
+      border-top: 1px solid #eee;
+      padding: 1rem 0;
+      transition: background-color 0.25s ease;
+      border-radius: 6px;
+    }
+
+    article.comment:first-of-type {
+      border-top: none;
+    }
+
+    article.comment:hover {
+      background-color: #fbe7e9;
+    }
+
+    article.comment header {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #922432;
+      margin-bottom: 0.4rem;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    article.comment header:hover {
+      color: #7a1f29;
+      text-decoration: underline;
+    }
+
+    article.comment time {
+      font-style: italic;
+      color: #777;
+      font-size: 0.9rem;
+      margin-left: 0.5rem;
+    }
+
+    article.comment p {
+      margin: 0.3rem 0 0 0;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    /* Back to top button */
+    #backToTop {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #b33951;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.2rem;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 1rem;
+      box-shadow: 0 4px 8px rgba(179,57,81,0.3);
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+      z-index: 1000;
+    }
+    #backToTop:hover {
+      opacity: 1;
+      background: #932432;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      body {
+        padding: 1rem 0.8rem;
+        max-width: 100%;
+      }
+      article {
+        padding: 1.5rem 1.5rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      section#comments {
+        padding: 1rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <article>
+    <header>
+      <h1>The Art of Letting Him Go</h1>
+      <p class="author-date">By <strong>Navya</strong> and <strong>Aishu</strong> — Published on <time datetime="2025-06-12">June 12, 2025</time></p>
+    </header>
+
+    <p>
+      Letting go is one of the hardest lessons in life, especially when it comes to someone you love deeply. But learning the art of letting him go is essential for your own growth, peace, and happiness.
+    </p>
+
+    <h2>Understanding Why It’s Hard to Let Go</h2>
+    <p>
+      Holding on often stems from fear—fear of loneliness, fear of change, or fear of the unknown. Recognizing these fears can be the first step towards healing and moving forward.
+    </p>
+
+    <img src="1.jpg" alt="Woman releasing a balloon into the sky at sunset" />
+
+    <h2>Steps to Gracefully Let Him Go</h2>
+    <ul>
+      <li>Allow yourself to feel all emotions without judgment</li>
+      <li>Seek support from friends, family, or a counselor</li>
+      <li>Create new routines and rediscover your passions</li>
+      <li>Focus on self-love and personal growth</li>
+      <li>Practice forgiveness—for him and yourself</li>
+    </ul>
+
+    <p>
+      Letting go doesn’t mean forgetting; it means choosing peace over pain and making space for new beginnings.
+    </p>
+  </article>
+
+  <section id="comments" aria-label="Comments">
+    <h3>Comments</h3>
+
+    <article class="comment" aria-label="Comment by Maya">
+      <header>
+        Maya <time datetime="2025-06-13T10:15">June 13, 2025 at 10:15 AM</time>
+      </header>
+      <p>This post really spoke to me. Letting go is tough but necessary. Thank you for sharing your wisdom!</p>
+    </article>
+
+    <article class="comment" aria-label="Comment by Ravi">
+      <header>
+        Ravi <time datetime="2025-06-14T14:30">June 14, 2025 at 2:30 PM</time>
+      </header>
+      <p>Beautifully written. These steps helped me a lot when I went through a breakup.</p>
+    </article>
+  </section>
+
+  <button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'})" aria-label="Back to top">↑ Top</button>
+
+</body>
+</html>

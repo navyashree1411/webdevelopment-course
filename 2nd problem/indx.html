@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ProductX | Landing Page</title>
+  <style>
+    /* Box model reset */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f9fafc;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    header {
+      background-color: #005f73;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .product-description {
+      margin-bottom: 2.5rem;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #0a9396;
+      color: white;
+      padding: 1rem 2.5rem;
+      font-size: 1.25rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-bottom: 3rem;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      user-select: none;
+    }
+
+    .cta-button:hover,
+    .cta-button:focus {
+      background-color: #005f73;
+      outline: none;
+    }
+
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      max-width: 450px;
+      margin: 0 auto;
+      border: 2px solid #0a9396;
+    }
+
+    form h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: #005f73;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 0.6rem 0.8rem;
+      margin-bottom: 1rem;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus {
+      border-color: #0a9396;
+      outline: none;
+      box-shadow: 0 0 5px #94d2bd;
+    }
+
+    .checkbox-group {
+      margin-bottom: 1.2rem;
+    }
+
+    .checkbox-group input[type="checkbox"] {
+      margin-right: 0.5rem;
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+
+    button[type="submit"] {
+      background-color: #0a9396;
+      color: white;
+      border: none;
+      padding: 0.9rem 1.8rem;
+      font-size: 1.1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover,
+    button[type="submit"]:focus {
+      background-color: #005f73;
+      outline: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .cta-button {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.1rem;
+      }
+
+      form {
+        padding: 1.5rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ProductX</h1>
+    <p>The ultimate solution to simplify your daily workflow and boost productivity.</p>
+  </header>
+
+  <main>
+    <p class="product-description">
+      ProductX combines cutting-edge technology with intuitive design, helping you stay organized, collaborate seamlessly, and achieve more every day. Whether you're working solo or in a team, ProductX adapts to your needs with powerful features and easy integration.
+    </p>
+
+    <a href="#signup-form" class="cta-button" aria-label="Sign up for ProductX newsletter">Get Early Access</a>
+
+    <form id="signup-form" action="#" method="post" novalidate>
+      <h2>Sign Up for Our Newsletter</h2>
+
+      <label for="full-name">Full Name</label>
+      <input type="text" id="full-name" name="full-name" placeholder="Your full name" required aria-required="true" />
+
+      <label for="email-address">Email Address</label>
+      <input type="email" id="email-address" name="email-address" placeholder="you@example.com" required aria-required="true" />
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="terms" name="terms" required aria-required="true" />
+        <label for="terms">I agree to the <a href="#" target="_blank" rel="noopener noreferrer">terms and conditions</a>.</label>
+      </div>
+
+      <button type="submit">Subscribe</button>
+    </form>
+  </main>
+
+</body>
+</html>

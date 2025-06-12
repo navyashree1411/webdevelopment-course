@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Indian Railway Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 3rem;
+      color: #d32f2f; /* Indian Railways red */
+    }
+
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      padding: 2rem;
+      flex: 1 1 45%; /* grow, shrink, basis */
+      max-width: 45%;
+      box-sizing: border-box;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .service-card h2 {
+      margin-top: 0;
+      color: #d32f2f;
+      margin-bottom: 1rem;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* Medium screens (tablet) */
+    @media (max-width: 900px) {
+      .service-card {
+        max-width: 80%;
+        flex-basis: 80%;
+      }
+    }
+
+    /* Small screens (mobile) */
+    @media (max-width: 600px) {
+      .services-container {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .service-card {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Indian Railway Services</h1>
+
+  <div class="services-container">
+    <section class="service-card">
+      <h2>Online Ticket Booking</h2>
+      <p>Book train tickets easily from anywhere using the official IRCTC platform with secure payment options.</p>
+    </section>
+
+    <section class="service-card">
+      <h2>Express Train Services</h2>
+      <p>Fast and efficient express trains connecting major cities with comfortable coaches and amenities.</p>
+    </section>
+
+    <section class="service-card">
+      <h2>Parcel and Freight Services</h2>
+      <p>Reliable transportation for goods and parcels across the country with timely delivery and safety.</p>
+    </section>
+
+    <section class="service-card">
+      <h2>Onboard Catering</h2>
+      <p>Enjoy delicious meals and refreshments served onboard during your journey on selected trains.</p>
+    </section>
+  </div>
+
+</body>
+</html>

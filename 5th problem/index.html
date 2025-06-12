@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore Beaches</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #fffaf0;
+    }
+
+    nav {
+      background-color: #008cba;
+      color: white;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 80px 20px;
+      min-height: 100vh;
+    }
+
+    #tropical {
+      background-color: #e0f7fa;
+    }
+
+    #rocky {
+      background-color: #dcedc8;
+    }
+
+    #urban {
+      background-color: #fff3e0;
+    }
+
+    h2 {
+      color: #00695c;
+      text-align: center;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 10px auto;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#tropical">Tropical Beaches</a></li>
+      <li><a href="#rocky">Rocky Beaches</a></li>
+      <li><a href="#urban">Urban Beaches</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sections -->
+  <section id="tropical">
+    <h2>Tropical Beaches</h2>
+    <p>Tropical beaches are known for their white sand, crystal-clear waters, and lush palm trees. Destinations like the Maldives, Bora Bora, and the Caribbean offer perfect getaways for relaxation and sunshine.</p>
+    <p>These beaches are ideal for snorkeling, swimming, and simply soaking up the sun while enjoying breathtaking views.</p>
+  </section>
+
+  <section id="rocky">
+    <h2>Rocky Beaches</h2>
+    <p>Rocky beaches, often found along rugged coastlines like Big Sur in California or parts of the Mediterranean, offer dramatic landscapes and fascinating geological formations.</p>
+    <p>While they may not be ideal for sunbathing, they provide great opportunities for hiking, photography, and tide-pooling.</p>
+  </section>
+
+  <section id="urban">
+    <h2>Urban Beaches</h2>
+    <p>Urban beaches combine the energy of the city with the tranquility of the ocean. Think of Copacabana in Rio de Janeiro or Bondi Beach in Sydney, where vibrant street life meets sandy shores.</p>
+    <p>These beaches are popular for surfing, beach sports, and enjoying cultural events right on the coast.</p>
+  </section>
+
+</body>
+</html>
