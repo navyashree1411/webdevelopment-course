@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FitBuddy | Fitness Club</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -63,7 +64,7 @@
       background-color: #e63946;
     }
 
-    form {
+    .form-wrapper {
       background: white;
       padding: 2rem;
       border-radius: 8px;
@@ -71,7 +72,7 @@
       border-left: 5px solid #ff6b6b;
     }
 
-    form h2 {
+    .form-wrapper h2 {
       margin-top: 0;
       text-align: center;
       color: #333;
@@ -118,7 +119,7 @@
         text-align: center;
       }
 
-      form {
+      .form-wrapper {
         padding: 1.5rem 1rem;
       }
     }
@@ -132,25 +133,32 @@
   </header>
 
   <main>
-    <p class="intro">
-      FitBuddy is not just a gym — it’s a lifestyle hub. We provide expert-led workouts, personalized plans, and a motivating environment to keep you going. Whether you're a beginner or a pro, FitBuddy helps you level up your fitness.
-    </p>
+    <div class="intro">
+      <p>
+        FitBuddy is not just a gym — it’s a lifestyle hub. We provide expert-led workouts, personalized plans,
+        and a motivating environment to keep you going. Whether you're a beginner or a pro, FitBuddy helps you
+        level up your fitness.
+      </p>
+    </div>
 
     <a href="#join-form" class="cta-button" aria-label="Join FitBuddy Now">Join Now</a>
 
-    <form id="join-form" action="#" method="post" novalidate>
+    <div class="form-wrapper" id="join-form">
       <h2>Membership Registration</h2>
 
-      <label for="full-name">Full Name</label>
-      <input type="text" id="full-name" name="full-name" placeholder="Your name" required />
+      <form action="#" method="post" novalidate>
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="full-name" placeholder="Your name" required />
 
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
 
-      <button type="submit">Become a Member</button>
-    </form>
+        <button type="submit">Become a Member</button>
+      </form>
+    </div>
   </main>
 
 </body>
 </html>
+
 
