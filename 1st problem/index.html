@@ -5,17 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NAVYA VADDI | Portfolio</title>
 
-  <!-- Google Fonts: Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  
 
   <style>
-    /* Reset & base */
     * {
       box-sizing: border-box;
     }
 
     body {
-      font-family: 'Poppins', Arial, sans-serif;
+      font-family: ' italic', Arial, sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
@@ -24,8 +22,8 @@
     }
 
     header {
-      background-color: #2c3e50;
-      color: #ecf0f1;
+      background-color: #ff0ceb;
+      color: #000000;
       padding: 1.5rem 1rem;
       text-align: center;
       box-shadow: 0 2px 8px rgba(44, 62, 80, 0.3);
@@ -77,7 +75,7 @@
       box-shadow: 0 8px 24px rgba(0,0,0,0.08);
     }
 
-    section {
+    div {
       margin-bottom: 4rem;
     }
 
@@ -90,7 +88,6 @@
       margin-bottom: 1.2rem;
     }
 
-    /* About Me */
     #about p {
       font-weight: 300;
       font-size: 1.125rem;
@@ -100,7 +97,6 @@
       margin-bottom: 1rem;
     }
 
-    /* Projects */
     article {
       background: #f0f4f8;
       padding: 1.25rem 1.5rem;
@@ -128,7 +124,18 @@
       font-size: 1rem;
     }
 
-    /* Contact Form */
+    article a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #3498db;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    article a:hover {
+      text-decoration: underline;
+    }
+
     form {
       max-width: 600px;
       display: flex;
@@ -181,7 +188,6 @@
       box-shadow: 0 6px 20px rgba(33, 125, 187, 0.5);
     }
 
-    /* Footer */
     footer {
       text-align: center;
       padding: 1.5rem 1rem;
@@ -194,7 +200,6 @@
       user-select: none;
     }
 
-    /* Responsive */
     @media (max-width: 600px) {
       nav ul {
         flex-direction: column;
@@ -228,29 +233,32 @@
   </header>
 
   <main>
-    <section id="about">
+    <div id="about">
       <h2>About Me</h2>
       <p>Hello! I'm Navyaa, a passionate front-end web developer dedicated to crafting accessible, responsive, and user-friendly web experiences. With solid skills in HTML, CSS, and JavaScript, I strive to write clean, maintainable code that not only functions well but also delights users.</p>
       <p>I’m committed to continuous learning and staying updated with the latest web technologies to deliver high-quality digital solutions. When I'm not coding, I enjoy exploring UI design trends and enhancing my skill set.</p>
-    </section>
+    </div>
 
-    <section id="projects">
+    <div id="projects">
       <h2>Projects</h2>
       <article tabindex="0">
         <h3>Project One: Portfolio Website</h3>
         <p>A clean and responsive personal portfolio website built using HTML5 and CSS3 to showcase my work and skills.</p>
+        <a href="https://github.com/navyashree1411/webdevelopment-course" target="_blank" rel="noopener">View on GitHub</a>
       </article>
       <article tabindex="0">
         <h3>Project Two: Weather App</h3>
         <p>A simple weather forecasting app using JavaScript and the OpenWeather API to fetch and display live data.</p>
+        <a href="#" target="_blank" rel="noopener">View on GitHub</a>
       </article>
       <article tabindex="0">
         <h3>Project Three: To-Do List</h3>
         <p>A functional to-do list app with add, edit, delete, and filter features. Created using vanilla JavaScript and CSS.</p>
+        <a href="#" target="_blank" rel="noopener">View on GitHub</a>
       </article>
-    </section>
+    </div>
 
-    <section id="contact">
+    <div id="contact">
       <h2>Contact Me</h2>
       <form action="#" method="post" novalidate>
         <label for="name">Name:</label>
@@ -264,7 +272,7 @@
 
         <button type="submit">Send Message</button>
       </form>
-    </section>
+    </div>
   </main>
 
   <footer>
