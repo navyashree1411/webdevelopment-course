@@ -104,14 +104,14 @@
     }
 
     /* Comments Section */
-    section#comments {
+    div#comments {
       background: white;
       padding: 1.5rem 2rem;
       border-radius: 10px;
       box-shadow: 0 3px 10px rgba(0,0,0,0.05);
     }
 
-    section#comments h3 {
+    div#comments h3 {
       font-size: 2rem;
       margin-top: 0;
       margin-bottom: 1.2rem;
@@ -200,7 +200,7 @@
       h2 {
         font-size: 1.4rem;
       }
-      section#comments {
+      div#comments {
         padding: 1rem 1rem;
       }
     }
@@ -239,7 +239,7 @@
     </p>
   </article>
 
-  <section id="comments" aria-label="Comments">
+  <div id="comments" aria-label="Comments">
     <h3>Comments</h3>
 
     <article class="comment" aria-label="Comment by Maya">
@@ -255,9 +255,10 @@
       </header>
       <p>Beautifully written. These steps helped me a lot when I went through a breakup.</p>
     </article>
-  </section>
+  </div>
 
   <button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'})" aria-label="Back to top">↑ Top</button>
 
 </body>
 </html>
+
